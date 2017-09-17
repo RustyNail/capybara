@@ -207,7 +207,7 @@ private
   end
 
   def set_text(value, clear: nil, **)
-    if value.to_s.empty? && options[:clear].nil?
+    if value.to_s.empty? && clear.nil?
       native.clear
     else
       if clear == :backspace
