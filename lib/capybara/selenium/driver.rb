@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 require "uri"
 
+# rubocop:disable Metrics/ClassLength
 class Capybara::Selenium::Driver < Capybara::Driver::Base
 
   DEFAULT_OPTIONS = {
