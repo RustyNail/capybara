@@ -119,6 +119,7 @@ class Capybara::Selenium::Driver < Capybara::Driver::Base
     browser.save_screenshot(path)
   end
 
+  # rubocop:disable Metrics/MethodLength
   def reset!
     # Use instance variable directly so we avoid starting the browser just to reset the session
     if @browser

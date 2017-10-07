@@ -35,6 +35,7 @@ class Capybara::Selenium::Node < Capybara::Driver::Node
   #   :none =>  append the new value to the existing value <br/>
   #   :backspace => send backspace keystrokes to clear the field <br/>
   #   Array => an array of keys to send before the value being set, e.g. [[:command, 'a'], :backspace]
+  # rubocop:disable Metrics/MethodLength
   def set(value, options={})
     tag_name = self.tag_name
     type = self[:type]
