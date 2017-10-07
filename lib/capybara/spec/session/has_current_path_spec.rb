@@ -66,7 +66,7 @@ Capybara::SpecHelper.spec '#has_current_path?' do
   it "should not allow url and only_path at the same time" do
     expect {
       expect(@session).to have_current_path('/with_js', url: true, only_path: true)
-      }. to raise_error ArgumentError
+    }. to raise_error ArgumentError
   end
 
   it "should not raise an exception if the current_url is nil" do
