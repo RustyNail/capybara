@@ -58,7 +58,7 @@ module Capybara
         @description
       end
 
-      def matches_filters?(node)
+      def matches_filters?(node) # rubocop:disable Metrics/MethodLength
         if options[:text]
           regexp = if options[:text].is_a?(Regexp)
             options[:text]
