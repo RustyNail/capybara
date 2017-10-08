@@ -62,7 +62,6 @@ module Capybara
       !any?
     end
 
-    # rubocop:disable Metrics/MethodLength
     def matches_count?
       # Only check filters for as many elements as necessary to determine result
       if @query.options[:count]
